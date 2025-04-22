@@ -6,7 +6,7 @@ import 'package:app_02/NoteAPI/view/NoteListScreenAPI.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
-  // await prefs.clear(); // ❌ Bỏ dòng này sau khi test
+
   runApp(const MyApp());
 }
 
@@ -59,3 +59,23 @@ class _AuthCheckWidget extends StatelessWidget {
     );
   }
 }
+//Tạo trang chứa ảnh
+/*import 'package:flutter/material.dart';
+import 'Images/Images.dart'; // Nhớ import file images.dart
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: ImageDemo(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
+*/
+

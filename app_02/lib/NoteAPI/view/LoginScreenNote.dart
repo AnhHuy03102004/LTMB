@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../model/AccountNote.dart';
 import 'NoteListScreenAPI.dart';
-import 'NoteRegisterScreen.dart';
+import 'RegisterScreenNote.dart';
 
 class LoginScreenNote extends StatefulWidget {
   const LoginScreenNote({super.key});
@@ -73,7 +73,7 @@ class _LoginScreenState extends State<LoginScreenNote> {
     await prefs.clear();
 
     if (mounted) {
-      runApp(const MyApp()); // 🔁 Reset toàn bộ ứng dụng
+      runApp(const MyApp()); //  Reset toàn bộ ứng dụng
     }
   }
 
@@ -177,7 +177,7 @@ class _LoginScreenState extends State<LoginScreenNote> {
                     MaterialPageRoute(builder: (_) => const NoteRegisterScreen()),
                   );
                 },
-                child: const Text("Bạn chưa có tài khoản? Đăng ký"),
+                child: const Text("Đăng ký"),
               ),
             ],
           ),

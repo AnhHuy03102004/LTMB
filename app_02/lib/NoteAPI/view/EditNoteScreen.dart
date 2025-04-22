@@ -3,7 +3,7 @@ import '../model/Note.dart';
 import '../API/NoteAPIService.dart';
 import 'NoteForm.dart';
 
-// Màn hình chỉnh sửa ghi chú
+// Hiển Thị Màn Hình Ghi Chú
 class EditNoteScreen extends StatelessWidget {
   final Note note; // Ghi chú cần chỉnh sửa
 
@@ -17,7 +17,7 @@ class EditNoteScreen extends StatelessWidget {
       // Hàm xử lý khi người dùng nhấn "Lưu"
       onSave: (updatedNote) async {
         await NoteAPIService.instance.updateNote(updatedNote); // Gọi API cập nhật
-        Navigator.pop(context, true); // Trở về màn hình trước và báo thành công
+        Navigator.pop(context, true); // Trở về màn hình và báo thành công
       },
     );
   }

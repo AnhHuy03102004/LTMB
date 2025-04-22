@@ -132,7 +132,7 @@ class NoteDetailScreen extends StatelessWidget {
       case 3:
         return Colors.red;
       case 2:
-        return Colors.orange;
+        return Colors.yellow;
       case 1:
       default:
         return Colors.green;
@@ -160,7 +160,7 @@ class NoteDetailScreen extends StatelessWidget {
     }
 
     // Phòng trường hợp không rơi vào nhánh nào
-    return Colors.grey;
+    return Colors.blueAccent;
   }
 
   // Màu chữ tương phản

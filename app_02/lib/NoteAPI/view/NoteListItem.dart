@@ -73,7 +73,7 @@ class NoteListItem extends StatelessWidget {
           children: [
             IconButton(
               icon: const Icon(Icons.edit),
-              color: Colors.blue.shade700,
+              color: Colors.tealAccent.shade700,
               onPressed: onEdit,
             ),
             IconButton(
@@ -83,8 +83,8 @@ class NoteListItem extends StatelessWidget {
                 showDialog(
                   context: context,
                   builder: (_) => AlertDialog(
-                    title: const Text('Xác nhận xoá'),
-                    content: const Text('Bạn có chắc muốn xoá ghi chú này không?'),
+                    title: const Text('Xác nhận xoá Ghi Chú'),
+                    content: const Text('Bạn muốn xoá ghi chú này?'),
                     actions: [
                       TextButton(
                         onPressed: () => Navigator.pop(context),

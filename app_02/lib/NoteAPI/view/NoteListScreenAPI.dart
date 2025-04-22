@@ -178,7 +178,7 @@ class _NoteListScreenState extends State<NoteListScreenAPI> {
                 )
                     : null,
                 filled: true,
-                fillColor: Colors.white,
+                fillColor: Colors.white70,
                 contentPadding: const EdgeInsets.symmetric(horizontal: 16),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
@@ -224,7 +224,7 @@ class _NoteListScreenState extends State<NoteListScreenAPI> {
               return GestureDetector(
                 onLongPress: () => _toggleSelection(note.id!),
                 child: Container(
-                  color: isSelected ? Colors.grey[300] : null,
+                  color: isSelected ? Colors.blue[300] : null,
                   child: NoteListItem(
                     note: note,
                     onEdit: () async {

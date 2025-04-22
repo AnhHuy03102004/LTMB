@@ -41,7 +41,7 @@ class _NoteRegisterScreenState extends State<NoteRegisterScreen> {
           setState(() => _isLoading = false);
           _showErrorDialog(
             'Lỗi đăng ký',
-            'Tên đăng nhập đã tồn tại. Vui lòng chọn tên khác.',
+            'Tên đăng nhập đã tồn tại.',
           );
           return;
         }
